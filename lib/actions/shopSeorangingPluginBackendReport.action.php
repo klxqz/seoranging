@@ -1,6 +1,6 @@
 <?php
 
-class shopBackendReportAction extends waViewAction
+class shopSeorangingPluginBackendReportAction extends waViewAction
 {
 
     public function execute()
