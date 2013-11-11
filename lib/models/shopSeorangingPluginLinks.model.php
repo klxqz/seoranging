@@ -1,6 +1,6 @@
 <?php
 
-class shopSeorangingLinksModel extends waModel
+class shopSeorangingPluginLinksModel extends waModel
 {
     protected $table = 'shop_seoranging_links';
     

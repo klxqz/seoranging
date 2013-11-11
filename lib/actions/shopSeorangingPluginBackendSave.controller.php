@@ -46,7 +46,7 @@ class shopSeorangingPluginBackendSaveController extends waJsonController
             
             
             
-            $seoranging_model = new shopSeorangingModel();
+            $seoranging_model = new shopSeorangingPluginModel();
             $seoranging_model->deleteAll();
             
             $items = array();   

@@ -8,7 +8,7 @@ class shopSeorangingPluginSettingsAction extends waViewAction
         $seoranging = wa()->getPlugin('seoranging');
         $urls = $seoranging->getSiteMap();
         
-        $seoranging_model = new shopSeorangingModel();
+        $seoranging_model = new shopSeorangingPluginModel();
         $rows = $seoranging_model->getAll();
         
         $settings = $seoranging->getSettings();

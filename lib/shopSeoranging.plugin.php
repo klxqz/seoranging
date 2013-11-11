@@ -96,8 +96,8 @@ class shopSeorangingPlugin extends shopPlugin
     
     public function ranging()
     {
-        $seoranging_model = new shopSeorangingModel();
-        $seoranginglinks_model = new shopSeorangingLinksModel();
+        $seoranging_model = new shopSeorangingPluginModel();
+        $seoranginglinks_model = new shopSeorangingPluginLinksModel();
         
         
         $pages = $this->getSiteMap();        
@@ -135,7 +135,7 @@ class shopSeorangingPlugin extends shopPlugin
     public static function display()
     {
         $app_settings_model = new waAppSettingsModel();
-        $seoranginglinks_model = new shopSeorangingLinksModel();
+        $seoranginglinks_model = new shopSeorangingPluginLinksModel();
         $domen = wa()->getRouting()->getDomain(null, true);
         $https = isset($_SERVER['HTTPS']) ? $_SERVER['HTTPS'] : '';
         $page = 'http'.(strtolower($https) == 'on' ? 's' : '').'://';
